@@ -595,6 +595,102 @@
     </div>
   </div>
 
+  <!-- BD250 Triage — Pre-Pipeline -->
+  <div class="pipeline-section">
+    <div class="section-label">BD250 Triage · Before the Pipeline</div>
+    <div style="background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 28px; margin-bottom: 8px;">
+      <div style="display: flex; align-items: flex-start; gap: 20px; margin-bottom: 24px;">
+        <div style="flex: 1;">
+          <div style="font-size: 15px; font-weight: 600; margin-bottom: 8px;">From List to Pipeline — The Triage Step</div>
+          <div style="font-size: 13px; color: var(--text-muted); line-height: 1.6;">
+            The BD250 list has ~250 agencies. You can't pursue all of them at once. Before creating deals, Megan scores each company's readiness using the <strong>BD250 Readiness</strong> property on the Company record. Only "Hot" agencies get deals created. "Warm" agencies go on a watch list with a biweekly review cadence. Work in waves of 10–15 active pursuits at a time.
+          </div>
+        </div>
+      </div>
+
+      <!-- Triage Flow -->
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px;">
+        <div style="background: rgba(249,115,22,0.04); border: 1px solid rgba(249,115,22,0.12); border-radius: 10px; padding: 18px;">
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: var(--accent-orange); margin-bottom: 12px;">👤 Megan's Triage Process</div>
+          <div style="display: flex; flex-direction: column; gap: 10px;">
+            <div style="display: flex; align-items: flex-start; gap: 10px; font-size: 13px; color: var(--text-muted);">
+              <div style="width: 22px; height: 22px; border-radius: 6px; background: rgba(249,115,22,0.15); color: var(--accent-orange); display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 600; flex-shrink: 0;">1</div>
+              <div>Open the BD250 company list in HubSpot</div>
+            </div>
+            <div style="display: flex; align-items: flex-start; gap: 10px; font-size: 13px; color: var(--text-muted);">
+              <div style="width: 22px; height: 22px; border-radius: 6px; background: rgba(249,115,22,0.15); color: var(--accent-orange); display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 600; flex-shrink: 0;">2</div>
+              <div>For each company, quick-assess: <strong style="color: var(--text);">How strong is the signal? How old is the ERP? Do we have a connection path?</strong></div>
+            </div>
+            <div style="display: flex; align-items: flex-start; gap: 10px; font-size: 13px; color: var(--text-muted);">
+              <div style="width: 22px; height: 22px; border-radius: 6px; background: rgba(249,115,22,0.15); color: var(--accent-orange); display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 600; flex-shrink: 0;">3</div>
+              <div>Set <strong style="color: var(--text);">BD250 Readiness</strong> property on the company record</div>
+            </div>
+            <div style="display: flex; align-items: flex-start; gap: 10px; font-size: 13px; color: var(--text-muted);">
+              <div style="width: 22px; height: 22px; border-radius: 6px; background: rgba(249,115,22,0.15); color: var(--accent-orange); display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 600; flex-shrink: 0;">4</div>
+              <div>Filter by "Hot" → create deals for those companies in BD250 pipeline</div>
+            </div>
+            <div style="display: flex; align-items: flex-start; gap: 10px; font-size: 13px; color: var(--text-muted);">
+              <div style="width: 22px; height: 22px; border-radius: 6px; background: rgba(249,115,22,0.15); color: var(--accent-orange); display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 600; flex-shrink: 0;">5</div>
+              <div>Fill in deal scoring properties → workflow calculates Priority Score → outreach begins</div>
+            </div>
+          </div>
+        </div>
+        <div style="background: rgba(6,182,212,0.04); border: 1px solid rgba(6,182,212,0.12); border-radius: 10px; padding: 18px;">
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: var(--accent-cyan); margin-bottom: 12px;">🏷️ BD250 Readiness Tags (Company Property)</div>
+          <div style="display: flex; flex-direction: column; gap: 10px;">
+            <div style="display: flex; align-items: stretch; gap: 0; border-radius: 6px; overflow: hidden; border: 1px solid rgba(239,68,68,0.25);">
+              <div style="min-width: 10px; background: #ef4444;"></div>
+              <div style="flex: 1; padding: 10px 14px;">
+                <div style="font-size: 12px; font-weight: 600; color: #ef4444;">Hot — Create Deal Now</div>
+                <div style="font-size: 11px; color: var(--text-dim); margin-top: 2px;">Strong signal + old ERP + connection path. Active pursuit.</div>
+              </div>
+            </div>
+            <div style="display: flex; align-items: stretch; gap: 0; border-radius: 6px; overflow: hidden; border: 1px solid rgba(245,158,11,0.25);">
+              <div style="min-width: 10px; background: #f59e0b;"></div>
+              <div style="flex: 1; padding: 10px 14px;">
+                <div style="font-size: 12px; font-weight: 600; color: #f59e0b;">Warm — Watch Closely</div>
+                <div style="font-size: 11px; color: var(--text-dim); margin-top: 2px;">Signal exists but timing uncertain. Biweekly review for changes.</div>
+              </div>
+            </div>
+            <div style="display: flex; align-items: stretch; gap: 0; border-radius: 6px; overflow: hidden; border: 1px solid rgba(59,130,246,0.25);">
+              <div style="min-width: 10px; background: #3b82f6;"></div>
+              <div style="flex: 1; padding: 10px 14px;">
+                <div style="font-size: 12px; font-weight: 600; color: #3b82f6;">Cool — Keep on List</div>
+                <div style="font-size: 11px; color: var(--text-dim); margin-top: 2px;">On the radar but not actionable yet. Monthly scan.</div>
+              </div>
+            </div>
+            <div style="display: flex; align-items: stretch; gap: 0; border-radius: 6px; overflow: hidden; border: 1px solid rgba(100,102,139,0.25);">
+              <div style="min-width: 10px; background: #64668b;"></div>
+              <div style="flex: 1; padding: 10px 14px;">
+                <div style="font-size: 12px; font-weight: 600; color: #64668b;">Not Ready</div>
+                <div style="font-size: 11px; color: var(--text-dim); margin-top: 2px;">No signal, wrong timing, or disqualified. Revisit quarterly.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Warm Watch List -->
+      <div style="padding: 16px 18px; background: rgba(245,158,11,0.05); border: 1px solid rgba(245,158,11,0.15); border-radius: 10px;">
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: var(--accent-amber); margin-bottom: 10px;">👀 Warm Watch List — Biweekly Review</div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; font-size: 12px; color: var(--text-muted);">
+          <div>
+            <div style="font-weight: 600; color: var(--text); margin-bottom: 4px;">Saved View</div>
+            <div>Companies → filter BD250 Readiness = "Warm — Watch Closely". Save as <strong style="color: var(--text);">BD250: Warm Watch List</strong>.</div>
+          </div>
+          <div>
+            <div style="font-weight: 600; color: var(--text); margin-bottom: 4px;">Recurring Task</div>
+            <div>Every 2 weeks: <strong style="color: var(--text);">"BD250: Review Warm Watch List for signal changes."</strong> Check GovSpend, board minutes, LinkedIn. Upgrade to Hot if signal strengthens.</div>
+          </div>
+          <div>
+            <div style="font-weight: 600; color: var(--text); margin-bottom: 4px;">Dashboard Report</div>
+            <div>Company table on BD250 dashboard filtered by Warm. Columns: name, ERP system, ERP age, buyer intent. Name: <strong style="color: var(--text);">BD250: Warm Watch List</strong>.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Priority Score Calculator -->
   <div class="pipeline-section">
     <div class="section-label">BD250 Priority Score · Workflow-Based Scoring (WF10)</div>
